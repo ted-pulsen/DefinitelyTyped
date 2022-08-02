@@ -1,4 +1,4 @@
-// Type definitions for swagger-jsdoc 6.0
+// Type definitions for swagger-jsdoc 6.1.0
 // Project: https://github.com/surnet/swagger-jsdoc
 // Definitions by: Daniel Grove <https://github.com/drGrove>
 //                 Neil Bryson Cargamento <https://github.com/neilbryson>
@@ -50,6 +50,7 @@ declare namespace swaggerJSDoc {
     interface OAS3Options {
         apis?: ReadonlyArray<string> | undefined;
         definition?: OAS3Definition | undefined;
+        failOnErrors?: boolean | undefined;
         swaggerDefinition?: OAS3Definition | undefined;
         [key: string]: any;
     }
@@ -306,6 +307,7 @@ declare namespace swaggerJSDoc {
     interface Options {
         apis?: ReadonlyArray<string> | undefined;
         definition?: SwaggerDefinition | undefined;
+        failOnErrors?: boolean | undefined;
         swaggerDefinition?: SwaggerDefinition | undefined;
         [key: string]: any;
     }
